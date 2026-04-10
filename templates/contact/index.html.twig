@@ -1,0 +1,113 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ContactController!{% endblock %}
+
+{% block body %}
+
+<body class="image-contact">
+
+<!---FORMULAIRE-->
+
+    <div class="form-container">
+
+        <div class="container d-flex justify-content-center mt-5">
+            <div class="card-form" style="max-width: 400px; width: 100%;">
+
+                <div class="header-container">
+                    <img src="images/horse_contact.png" alt="Logo" class="header-logo">
+
+                    <h1>Espace Équestre</h1>
+                    <p class="form-subtitle">Accédez à votre compte cavalier</p>
+                </div>
+
+                <h6 class="mb-1">Adresse mail</h6>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">cavalier@ecurie.com</label>
+                </div>
+
+                <h6 class="mb-1">Mot de passe</h6>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword"></label>
+                </div>
+
+                <div class="checkbox mb-3">
+                    <input type="checkbox" id="remember" />
+                    <label for="remember">Se souvenir de moi</label>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Se connecter</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!---FIN FORMULAIRE-->
+
+
+    <!---COORDONEES-->
+
+
+    <section class="info-block">
+        <h2 class="block-title">📍 Infos Pratiques du Horse Club</h2>
+
+        <div class="contact-flex">
+
+            <div class="contact-info">
+
+                <h3>📧 Nous Contacter</h3>
+                <p><i class="fas fa-envelope"></i> <strong>Mail :</strong> horseclub@gmail.com</p>
+                <p><i class="fas fa-phone"></i> <strong>Tél :</strong> 04-56-78-92-34</p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Adresse :</strong> 299 Chem. des Barrières, 69640
+                    Denicé</p>
+
+                <hr>
+
+                <h3>⏰ Horaires d'Ouverture</h3>
+                <table class="hours-table">
+                    <tr>
+                        <th>Jour</th>
+                        <th>Horaires</th>
+                    </tr>
+                    <tr>
+                        <td>Lundi & Mardi</td>
+                        <td>9h00-12h00 / 13h30-19h00</td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>8h30-18h00</td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td>8h30-18h00</td>
+                    </tr>
+                    <tr>
+                        <td>Samedi</td>
+                        <td>8h30-18h00</td>
+                    </tr>
+                    <tr>
+                        <td>Dimanche</td>
+                        <td>9h00-18h00 </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="contact-map">
+                <h3>Notre Localisation</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5188.121235648756!2d4.644542758400259!3d46.00267120837228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f48687a7565039%3A0x85c5c14fc5a50946!2sCentre%20%C3%89questre%20de%20Denic%C3%A9!5e0!3m2!1sfr!2sfr!4v1765576370763!5m2!1sfr!2sfr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+
+{% endblock %}

@@ -1,0 +1,319 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello NotreEquipeController!
+{% endblock %}
+
+{% block body %}
+
+	<body
+		class="image-equipe">
+	
+
+			<!--PRESENTATION DE LEQUIPE -->
+			<section class="container mt-5 py-5 text-center">
+				<h1 class="mb-5 display-5 fw-bold text-black">Rencontrez notre Equipe</h1>
+				<div class="row justify-content-center g-4">
+					<div class="text-start">
+						<div class="text-start"></div>
+						<p class="fs-5 text-black">
+							Les cours d'équitations sont encadrés par des monitrices et
+							                    moniteurs diplômés. Les cours peuvent être enseignés au enfant à partir de 3 ans et aux adultes de
+							                    tout niveaux.
+						</p>
+					</div>
+				</div>
+
+				<!--MODAL-->
+				<!--OLIVIER-->
+				<section class="container mt-5 py-5 text-center">
+					<div class="row justify-content-center g-4 row-cols-3">
+						<div class="">
+							<div class="card team-card h-100 shadow-sm p-4 ">
+								<img src="images/portraitolivier.jpg" width="180px" height="180px" class="rounded-circle mx-auto mb-3 team-member-img object-fit-cover" alt="Photo de Olivier">
+								<h5 class="mb-1">Olivier</h5>
+								<p class="text-muted small mb-3">Directeur</p>
+								<div
+									class="d-flex justify-content-center">
+									<!-- Button trigger modal -->
+									<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nom="Ollivier" data-titre="Directeur" data-description="Directeur du centre équestre et instructeur diplômé d'Etat. Passionné des chevaux depuis tout-peti, il a fait ke choix de bâtir son propre centre équestre, afin qu'il puisse travailler de sa passion.">
+										En savoir plus
+									</button>
+
+									<a href="#" class="text-secondary mx-2 fs-4" aria-label="Profil LinkedIn Olivier">
+										<i class="bi bi-linkedin"></i>
+									</a>
+									<a href="#" class="text-secondary mx-2 fs-4" aria-label="Profil Twitter Olivier">
+										<i class="bi bi-twitter"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1 class="modal-title fs-5" id="exampleModalLabel">Olivier</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										Directeur du centre équestre et instructeur diplômé d’Etat.
+										                                Passionné des chevaux depuis tout-petit, il a fait le choix de bâtir son propre centre
+										                                équestre, afin qu’il puisse travailer de sa passion.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fermer</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--OLIVIER-->
+
+
+						<!--PORTRAIT SOPHIE-->
+						<div class="">
+							<div class="card team-card h-100 shadow-sm p-4">
+								<img src="images/Portrait Sophie.jpg" width="180px" height="180px" class="rounded-circle mx-auto mb-3 team-member-img object-fit-cover" alt="Photo de Sophie">
+								<h5 class="mb-1">Sophie</h5>
+								<p class="text-muted small mb-3">Animatrice</p>
+								<!-- Button trigger modal -->
+								<div class="d-flex justify-content-center">
+									<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nom="Sophie" data-titre="Animatrice" data-description="Diplômée d'un Brevet d'État d'Éducateur Sportif, Sophie est une formatrice passionnée par l'équitation classique. Elle transmet son savoir avec patience et expertise, aidant chaque cavalier à développer ses compétences tout en s'amusant.">
+										En savoir plus
+									</button>
+									<a href="#" class="text-secondary mx-2 fs-4" aria-label="Profil LinkedIn Sophie">
+										<i class="bi bi-linkedin"></i>
+									</a>
+									<a href="#" class="text-secondary mx-2 fs-4" aria-label="Profil Twitter Sophie">
+										<i class="bi bi-twitter"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Modal SOPHIE-->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										Diplômée d’un Brevet d’Etat d’Educateur Sportif, Sophie est une formatrice passionnée
+										                                par l’équitation classique. Elle transmet son savoir avec patience et expertise, aidant
+										                                chaque cavalier à développer ses compétences tout en s’amusant.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- FIN PORTAIT SOPHIE-->
+
+						<!--PORTRAIT MARC-->
+						<div class="">
+							<div class="card team-card h-100 shadow-sm p-4">
+								<img src="/images/Portrait Marc.jpg" width="180px" height="180px" class="rounded-circle mx-auto mb-3 team-member-img object-fit-cover" alt="Photo de Marc">
+								<h5 class="mb-1">Marc</h5>
+								<p class="text-muted small mb-3">Animateur</p>
+
+								<!-- Button trigger modal -->
+								<div class="d-flex justify-content-center">
+									<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nom="Marc" data-titre="Animateur" data-description="Marc est un cavalier de compétition aguerri avec plusieurs titres à son actif. Son diplôme en équitation lui permet d’encadrer aussi bien les débutants que les cavaliers avancés. Sa méthode d’enseignement personnelle et motivante fait de chaque séance une étape vers l’excellence !">
+										En savoir plus
+									</button>
+									<a href="#" class="text-secondary mx-2 fs-4" aria-label="Profil LinkedIn Marc">
+										<i class="bi bi-linkedin"></i>
+									</a>
+									<a href="#" class="text-secondary mx-2 fs-4" aria-label="Profil Twitter Marc">
+										<i class="bi bi-twitter"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!--Modal Marc-->
+
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1 class="modal-title fs-5" id="exampleModalLabel">Marc</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										Marc est un cavalier de compétition aguerri avec plusieurs titres à son actif. Son
+										                                diplôme en équitation lui permet d’encadrer aussi bien les débutants que les cavaliers
+										                                avancés. Sa méthode d’enseignement personnelle et motivante fait de chaque séance une
+										                                étape vers l’excellence !
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--FIN DE PORTRAIT MARC-->
+
+
+					</section>
+
+
+					<section class="container mt-5 py-5 text-center">
+						<div
+							class="row justify-content-center g-4 row-cols-3">
+
+							<!--ELODIE-->
+							<div class="">
+								<div class="card team-card h-100 shadow-sm p-4">
+									<img src="images/Portrait Elodie.jpg" width="180px" height="180px" class="rounded-circle mx-auto mb-3 team-member-img object-fit-cover" alt="Photo d'ELODIE">
+									<h5 class="mb-1">Elodie</h5>
+									<p class="text-muted small mb-3">Cavalière</p>
+									<div
+										class="d-flex justify-content-center">
+										<!-- Button trigger modal -->
+										<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nom="Elodie" data-titre="Animatrice" data-description="Elodie est notre spécialiste des jeunes cavaliers. Avec une passion débordante pour
+												                            l’équitation et une approche ludique, elle accompagne les enfants dans leurs premiers pas à
+												                            poney. Grâce à son exoérience et sa douceur, chaque leçon devient un momet de bonheur et
+												                            d’apprentissage !">
+											En savoir plus
+										</button>
+
+										<a href="#" class="text-secondary mx-2 fs-4" aria-label="Profil LinkedIn de Léa Bernard">
+											<i class="bi bi-linkedin"></i>
+										</a>
+										<a href="#" class="text-secondary mx-2 fs-4" aria-label="Profil Twitter de Léa Bernard">
+											<i class="bi bi-twitter"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											Elodie est notre spécialiste des jeunes cavaliers. Avec une passion débordante pour
+											                                l’équitation et une approche ludique, elle accompagne les enfants dans leurs premiers
+											                                pas à
+											                                poney. Grâce à son exoérience et sa douceur, chaque leçon devient un momet de bonheur et
+											                                d’apprentissage !
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!--LUCAS-->
+
+							<div class="">
+								<div class="card team-card h-100 shadow-sm p-4">
+									<img src="images/Portrait Lucas.jpg" width="180px" height="180px" class="rounded-circle mx-auto mb-3 team-member-img object-fit-cover" alt="Photo Lucas">
+									<h5 class="mb-1">Lucas</h5>
+									<p class="text-muted small mb-3">Cavalier</p>
+									<div
+										class="d-flex justify-content-center">
+										<!-- Button trigger modal -->
+										<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nom="Lucas" data-titre="Animateur" data-description="Lucas est un cavalier chevronné qui a su développer ses compétences à travers de nombreuse compétitions. Son diplôme en équitation le qualifie pour enseigner à tous les nivaux, les débutants aux plus expérimentés. Avec sa passion communative et son approche pédagogique, il inspire chaque cavalier à dépasser ses limites et à se sentir confiant en selle.">
+											En savoir plus
+										</button>
+
+										<a href="#" class="text-secondary mx-2 fs-4" aria-label="Profil LinkedIn de Léa Bernard">
+											<i class="bi bi-linkedin"></i>
+										</a>
+										<a href="#" class="text-secondary mx-2 fs-4" aria-label="Profil Twitter de Léa Bernard">
+											<i class="bi bi-twitter"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											Lucas est un cavalier chevronné qui a su développer ses compétences à travers de nombreuse
+											                                compétitions. Son diplôme en équitation le qualifie pour enseigner à tous les nivaux, les
+											                                débutants aux plus expérimentés. Avec sa passion communative et son approche pédagogique, il
+											                                inspire chaque cavalier à dépasser ses limites et à se sentir confiant en selle.
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--FIN PORTRAIT LUCAS-->
+
+							<!--CAMILLE-->
+							<div class="">
+								<div class="card team-card h-100 shadow-sm p-4">
+									<img src="images/Portrait Camille.jpg" width="180px" height="180px" class="rounded-circle mx-auto mb-3 team-member-img object-fit-cover" alt="Photo Camille">
+									<h5 class="mb-1">Camille</h5>
+									<p class="text-muted small mb-3">Cavalière</p>
+									<div
+										class="d-flex justify-content-center">
+										<!-- Button trigger modal -->
+										<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nom="Camille" data-titre="Cavalière" data-description="Camille est une formatrice passionnée qui adore son amour des chevaux. Avec un diplôme en équitation de loisir, elle a une approche dynamique et interactive qui sait captiver ses élèves. Que ce soit pour apprendre les bases ou perfectionner les techniques, Camille sait s’adapter aux besoins de chacun tout en cultivant une atmosphère amicale et amusante !">
+											En savoir plus
+										</button>
+
+										<a href="#" class="text-secondary mx-2 fs-4" aria-label="Profil LinkedIn de Camille">
+											<i class="bi bi-linkedin"></i>
+										</a>
+										<a href="#" class="text-secondary mx-2 fs-4" aria-label="Profil Twitter de Camille">
+											<i class="bi bi-twitter"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											Camille est une formatrice passionnée qui adore son amour des chevaux. Avec un diplôme en
+											                            équitation
+											                            de loisir, elle a une approche dynamique et interactive qui sait captiver ses élèves. Que ce
+											                            soit
+											                            pour apprendre les bases ou perfectionner les techniques, Camille sait s’adapter aux besoins
+											                            de
+											                            chacun tout en cultivant une atmosphère amicale et amusante !
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- FIN MODAL-->
+						</div>
+
+
+					</section>
+
+				</body>
+
+
+			{% endblock %}

@@ -1,0 +1,30 @@
+/* body notre equipe */
+.image-equipe {
+    background-image: url("../images/6d3f3c426e0cbe3083a78e009a362938.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbg {
+    background-color: #c5a787;
+}
+
+.navbg a {
+    color: #301f17;
+}
+
+.navbg a:hover {
+    color : #63402c;
+}
+
+.btn-outline-primary {
+  color: brown;
+  border-color: brown;
+}
+
+.btn-outline-primary:hover {
+  background-color: brown;
+  color: white;
+  border-color: brown;
+}

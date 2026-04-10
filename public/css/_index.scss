@@ -1,0 +1,43 @@
+/* body accceuil */
+
+.image-acceuil {
+    background-image: url("../images/cheval-brun-au-ranch.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbg {
+  background-color: #c5a787; 
+}
+
+.navbg a {
+    color: #301f17;
+}
+
+.navbg a:hover {
+    color : #63402c;
+}
+
+.service-items {
+    display: flex; 
+    flex-direction: row;             
+    justify-content: center;     
+    gap: 60px;                            
+}
+
+.item p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;   
+}
+
+.logo-hover {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.logo-hover:hover {
+    transform: scale(1.15);
+    filter: brightness(1.2);
+}

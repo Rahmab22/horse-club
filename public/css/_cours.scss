@@ -1,0 +1,40 @@
+.image-cours {
+    background-image: url("../images/cdcb019c4b18f63cc80cf67a5846e947.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+}
+
+.logo-carte {
+    width: 80px;
+    height: auto;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+}
+
+.navbg {
+  background-color: #c5a787; 
+}
+
+.navbg a {
+    color: #301f17;
+}
+
+.navbg a:hover {
+    color : #63402c;
+}
+
+.btn {
+    color: red;
+}
+
+

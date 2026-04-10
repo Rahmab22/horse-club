@@ -1,0 +1,264 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+<body class="image-acceuil "  style="background-image:url('{{ asset('images/cheval-brun-au-ranch.jpg') }}')">
+{# <div class="container" style="background-image:url('{{ asset('bundles/appbundle/images/top_bg.jpg') }}')"> , #}
+
+ <!--PRESENTATION SITE -->
+
+    <section class="container mt-5 py-5 text-center">
+        <h1 class="mb-5 display-5 fw-bold text-black">Bienvenue chez Horse Club</h1>
+        <div class="row justify-content-center g-4">
+            <div class="text-start">
+                <h2 class="mb-2 display-5 text-black">Passion et Execellence Equestre</h2>
+                <p class="text-black">Que tu sois cavalier débutant ou confirmé, notre écurie est l'endroit idéal pour
+                    partager ta
+                    passionles chevaux.<br> Nous offrons une variété de services, allant des cours d'équitation pour
+                    tous les
+                    niveaux à des stages et des compétitions.</p>
+                <h2 class="text-black display-5"> Qui sommes-nous?</h2>
+                <p class="text-black "> Bienvenue à Horse Club, où la passion du chaval se transmet de génération en
+                    génération. Fondé en 1995 par les frères Dubois, notre centre équestre a toujours été plus qu’une
+                    simple écurie : c’est un véritable havre de paix et d’apprentissage pour tous les amoureux des
+                    chevaux.<br>
+
+                    <br> Ce qui a commencé comme un rêve famillial, celui de partager l’amour de l’équitation et le
+                    respect
+                    de ces magnifiques animaux, est aujourd’hui devenu une référence dans la région de Lyon. Au fil des
+                    ans, nous avons grandi, modernisé nos installations et développé une pédagogie axée sur le bien-être
+                    animal et l’apanouissement de chaque cavalier, du débutant au confimé.<br>
+
+                    <br>Aujourd’hui, chaque jour, nous oeuvrons pour créer un environement chaleureux sûr et stimulant,
+                    où
+                    chacun peut vivre pleinement sa passion équestre.
+                    Rejoignez l’aventure Horse Club et écrivez avec nous les prochaines pages de cette belle histoire !
+                </p>
+            </div>
+
+            <!--FIN PRESENTATION SITE-->
+
+            <!--CAROUSEL-->
+            <h1 class="mb-2 display-5 text-white text-start">Nos services</h1>
+
+            <div class="service-items">
+
+                <div class="item">
+                    <a href="/equipe" target="_blank">
+                        <img class="img-fluid logo-hover" src="images/camping_15837715.png" width="100" alt="">
+                    </a>
+                    <p>Notre Equipe</p>
+                </div>
+
+                <div class="item">
+                    <a href="/cours" target="_blank">
+                        <img class="img-fluid logo-hover" src="images/game_16462408.png" width="100" alt="">
+                    </a>
+                    <p>Cours</p>
+                </div>
+
+                <div class="item">
+                    <a href="/penssion" target="_blank">
+                        <img class="img-fluid logo-hover" src="images/stable_2713513.png" width="100" alt="">
+                    </a>
+                    <p>Pension</p>
+                </div>
+
+                <div class="item text-center">
+                    <a href="/boutique" target="_blank">
+                        <img class="img-fluid logo-hover" src="images/horseshoe_7453943.png" width="100" alt="">
+                    </a>
+                    <p>Boutique</p>
+                </div>
+
+                <div class="item">
+                    <a href="/contact" target="_blank">
+                        <img class="img-fluid logo-hover" src="images/horse_11416218.png" width="100" alt="">
+                    </a>
+                    <p>Contact</p>
+                </div>
+
+            </div>
+
+
+
+            <h1 class="mb-2 display-5 text-white text-start">Ce que nos cavaliers disent de nous</h1>
+            {# <p class="mb-2 display-5 text-white text-start">Ce que nos cavaliers disent de nous </p> #}
+
+            <!-- Témoignage LOUISE -->
+
+            <div id="carouselTemoignages" class="carousel slide" data-bs-ride="carousel ">
+                <div class="carousel-inner text-center">
+
+                    <!-- Témoignage LOUISE -->
+                    <div class="carousel-item active bg-light-subtle ">
+                        <blockquote class="blockquote ">
+                            <p class="mb-3">"Les cours au Horse Club sont vraiment top ! L’équipe pédagogique
+                                est
+                                très
+                                professionnelle et s’adapte au niveau de chacun. J’ai progressé énormément en
+                                quelques
+                                mois."</p>
+                            <footer class="blockquote-footer">Louise</footer>
+                        </blockquote>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+
+                    <!-- Témoignage LOLA -->
+                    <div class="carousel-item active bg-light-subtle">
+                        <blockquote class="blockquote">
+                            <p class="mb-3">"Ambiance bienveillante, chevaux bien dressés, et encadrants très
+                                compétents. Mes enfants adorent venir chaque semaine, c’est devenu leur moment
+                                préféré !
+                            </p>
+                            <footer class="blockquote-footer">Lola</footer>
+                        </blockquote>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+
+                    <!-- Témoignage Sarah -->
+                    <div class="carousel-item active bg-light-subtle">
+                        <blockquote class="blockquote">
+                            <p class="mb-3">"Mention spéciale à Sophie, qui a su redonner confiance à ma fille
+                                après
+                                une
+                                mauvaise expérience dans un autre club. Un vrai talent pour communiquer avec les
+                                jeunes
+                                cavaliers."</p>
+                            <footer class="blockquote-footer">Sarah</footer>
+                        </blockquote>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                    </div>
+
+                    <!--TEMOIGNAGE Théo-->
+                    <div class="carousel-item active bg-light-subtle">
+                        <blockquote class="blockquote">
+                            <p class="mb-3">"Mon cheval est en pension au Horse Club depuis 1 an, et je n’ai
+                                jamais
+                                été
+                                aussi sereine. Les installations sont impeccables, et le suivi vétérinaire est
+                                rigoureux."
+                            </p>
+                            <footer class="blockquote-footer">Théo</footer>
+                        </blockquote>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                    </div>
+
+                    <!--TEMOIGNAGE Valérie-->
+                    <div class="carousel-item active bg-light-subtle">
+                        <blockquote class="blockquote">
+                            <p class="mb-3">"Le site propose une belle sélection d’équipements et de soins pour
+                                chevaux.
+                                Très pratique pour les propriétaires comme moi."
+                            </p>
+                            <footer class="blockquote-footer">Valérie</footer>
+                        </blockquote>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                    </div>
+
+                    <!--TEMOIGNAGE Nicolas-->
+                    <div class="carousel-item active bg-light-subtle">
+                        <blockquote class="blockquote">
+                            <p class="mb-3">"L’endroit est toujours propre, bien organisé, et l’accueil est
+                                chaleureux.
+                                Je recommande les yeux fermés, que ce soit pour apprendre à monter ou pour y
+                                mettre
+                                son
+                                cheval en pension."
+                            </p>
+                            <footer class="blockquote-footer">Nicolas</footer>
+                        </blockquote>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                    </div>
+
+                    <!--TEMOIGNAGE Thimoté-->
+                    <div class="carousel-item active bg-light-subtle">
+                        <blockquote class="blockquote">
+                            <p class="mb-3">"Horse Club est un centre d’exception : ambiance familiale, chevaux
+                                bien
+                                traités, et installations modernes. On sent que le bien-être animal est une
+                                priorité."
+                            </p>
+                            <footer class="blockquote-footer">Thimoté</footer>
+                        </blockquote>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Contrôles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTemoignages"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Précédent</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTemoignages"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Suivant</span>
+                    </button>
+                </div>
+            </div>
+
+            <!--FIN DE TEMOIGNAGE -->
+
+
+
+
+</body>
+
+
+
+
+
+
+
+{% endblock %}

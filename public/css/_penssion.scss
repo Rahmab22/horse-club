@@ -1,0 +1,28 @@
+.image-penssion {
+    background-image: url("../images/caa26521b85a3571d73e32ea1e580375.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+}
+
+.navbg {
+  background-color: #c5a787; 
+}
+
+.navbg a {
+    color: #301f17;
+}
+
+.navbg a:hover {
+    color : #63402c;
+}
+
+
+
+.small-img {
+  max-width: 200px;   /* largeur réduite */
+  height: auto;       /* garde les proportions */
+  margin: 0 auto;     /* centre dans la card */
+  display: block;     /* obligé pour le centrage */
+}

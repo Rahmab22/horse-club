@@ -1,0 +1,122 @@
+.image-contact {
+    background-image: url("../images/contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+}
+
+// FORMULAIRE
+
+.card-form {
+    background: #E6DAC8;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.header-container {
+    text-align: center;       /* Centrer tout le contenu */
+    margin-bottom: 30px;      /* Espace sous le bloc */
+}
+
+.header-logo {
+    width: 80px;              /* Taille du logo (modifiable) */
+    height: auto;
+    margin-bottom: 15px;      /* Espace entre le logo et le titre */
+}
+
+
+// FIN FORMULAIRE
+
+// coordonnées
+
+.info-block {
+    padding: 20px 0;
+   
+}
+
+.block-title {
+    text-align: center;
+    color: #5A3B3B; /* Marron foncé/bordeaux */
+    margin: 40px auto 30px;
+    font-size: 2em;
+    font-weight: bold;
+    /* Améliore la lisibilité par-dessus l'image de fond */
+    background-color: rgba(255, 255, 255, 0.85); 
+    display: table; /* Pour que le fond ne prenne que la place du texte */
+    padding: 10px 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur Flexbox pour les deux colonnes (Infos et Carte) */
+.contact-flex {
+    display: flex;
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    background-color: rgba(255, 255, 255, 0.95); /* Fond BLANC semi-transparent pour lisibilité */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Ombre prononcée */
+}
+
+/* Style des deux colonnes */
+.contact-info,
+.contact-map {
+    flex: 1; 
+}
+
+
+.contact-info p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+/* ========================================= */
+/* --- 3. Style du tableau des Horaires --- */
+/* ========================================= */
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1em;
+}
+
+.hours-table th, .hours-table td {
+    padding: 10px 0;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+
+/* --- 4. Style de la Carte --- */
+.contact-map iframe {
+    border-radius: 8px; 
+    width: 100%;
+    height: 450px;
+}
+
+/* --- 5. Responsivité (Mobile) --- */
+
+@media (max-width: 900px) {
+    .contact-flex {
+        flex-direction: column; /* Empile les colonnes */
+        padding: 20px;
+    }
+    .block-title {
+        font-size: 1.5em; /* Taille plus petite pour les titres sur mobile */
+    }
+    .contact-map iframe {
+        height: 300px; /* Carte plus petite sur mobile */
+    }
+}
+// FIN CODE COORDONNEES

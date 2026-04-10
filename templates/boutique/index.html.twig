@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BoutiqueController!
+{% endblock %}
+
+
+{% block body %}
+
+	<body class="image-boutique">
+		<h1>Notre boutique</h1>
+
+		<div class="products">
+			{% for product in products %}
+				<div class="product">
+					<img src="{{ asset('uploads/images/' ~ product.imageName) }}" alt="{{ product.name }}">
+
+
+					<h2>{{ product.name }}</h2>
+					<p>{{ product.description }}</p>
+					<strong>{{ product.price }}
+						€</strong>
+
+					{% if product.stock > 0 %}
+						<p>Stock disponible :
+							{{ product.stock }}</p>
+						<a href="#" class="btn-add">Ajouter au panier</a>
+					{% else %}
+						<p style="color:red;">Rupture de stock</p>
+					{% endif %}
+				</div>
+			{% endfor %}
+		</div>
+
+	</body>
+{% endblock %}

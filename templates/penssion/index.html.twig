@@ -1,0 +1,218 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PenssionController!{% endblock %}
+
+{% block body %}
+
+<body class="image-penssion">
+
+<!--NOS PENSION-->
+
+<div class="container mt-5 py-5 text-center">
+    <h1 class="mb-5 display-5 fw-bold text-black">NOS PENSIONS</h1>
+    <div class="row justify-content-center g-4">
+        <div class="text-start">
+            <div class="text-start"></div>
+            <p class="fs-5 text-black"> Découvrez les écuries, le lieu idéal pour la pension de votre cheval dans des
+                boxs confortables et sécurisés. Nos box sont conçus pour offrir un maximum de confort à votre cheval :
+                paille fraîche, abreuvoirs automatiques ect. Nous proposons différentes formules de pension pour
+                répondre à vos attentes et aux besoins spécifiques de votre cheval. Nos installations comprennent
+                également des paddocks spacieux, une carrière, un manège ect ... offrant un environement complet pour
+                l'activité et le repos de votre cheval. Contactez-nous dès aujourd'huipour en savoir plus et planifier
+                une visite !
+            </p>
+        </div>
+    </div>
+
+    <!---FIN DU TEXTE PENSION-->
+
+    <!---DEBUT DES TARIFS -->
+
+    <!--TARIF 1-->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="images/Pré proche.jpg" class="card-img-top" alt="Image de l'article 1">
+                <div class="card-body">
+                    <h5 class="card-title">Pré proche</h5>
+                    <p class="text-start"> Nous offrons la possibilité d'une pension au pré, pour les chevaux qui
+                        s'épanouissent pleinement en extérieur, au contact de la nature et de leurs congénères...
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#modalPreProche">
+                        En savoir plus
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalPreProche" tabindex="-1" aria-labelledby="labelPreProche"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="labelPreProche">Pré proche</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    Cette formule privilégie la liberté de mouvement et un mode de vie plus proche de
+                                    leurs besoins naturels.
+                                    <ul class="liste-tarifs">
+
+                                        <li>Surveillance quotidienne : Votre cheval est sous l'œil attentif de notre
+                                            équipe,
+                                            avec des contrôles réguliers de son état de santé et de son bien-être. </li>
+                                        <li>Apport en foin de qualité à volonté (ou selon les besoins spécifiques de
+                                            votre
+                                            cheval et la saison).
+                                        </li>
+                                        <li> Distribution de compléments alimentaires (fournis par le propriétaire, si
+                                            nécessaire).</li>
+                                        <li>Tarifs : 190€/mois</li>
+                                    </ul>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--TARIF 1-->
+
+
+        <!--TARIF 2-->
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="images/Pré élioigner.jpg" class="card-img-top" alt="Image pré éloigné">
+                <div class="card-body">
+                    <h5 class="card-title">Pré Eloigné</h5>
+                    <p class="text-start">Nous créons des interfaces modernes, esthétiques et intuitives pour offrir
+                        à vos
+                        visiteurs une expérience utilisateur fluide et engageante.
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#modalPreEloigne">
+                        En savoir plus
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalpreEloigne" tabindex="-1" aria-labelledby="labelPreEloigne"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="labelPreEloigne">Pré éloigné</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                       </div>
+                                  <div class="modal-body text-start">
+                                    Nos prés éloignés sont de grandes étendues herbeuses, offrant à votre compagnon
+                                    équin la liberté de se mouvoir et d'interagir naturellement avec ses congénères.
+                                    Bien que plus distants des installations principales, ces pâturages sont
+                                    régulièrement inspectés pour garantir la sécurité et le bien-être de votre
+                                    cheval. Nous veillons à ce qu'il bénéficie d'un accès constant à :
+
+                                    <li>De vastes pâtures naturelles : Des prairies entretenues pour une
+                                        alimentation
+                                        fourragère de qualité.</li>
+
+                                    <li>Abreuvoirs naturels ou points d'eau régulièrement vérifiés.</li>
+
+                                    <li>Abri naturel ou artificiel pour se protéger des intempéries.</li>
+
+                                    <li>Surveillance et rondes régulières de notre équipe pour s'assurer de la bonne
+                                        santé et du comportement de chaque cheval.</li>
+
+                                    <li>Tarif : 170 €/ mois</li>
+                                  </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TARIF 2-->
+
+        <!--TARIF 3-->
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="images/Paddock.jpg" class="card-img-top" alt="Image de l'article 1">
+                <div class="card-body">
+                    <h5 class="card-title">Paddocks (17x80 m) avec abris</h5>
+                    <p class="card-text">Nous créons des interfaces modernes, esthétiques et intuitives pour
+                        offrir à vos
+                        visiteurs une expérience utilisateur fluide et engageante.
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#PaddockModal">
+                        En savoir plus
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="PaddockModal" tabindex="-1" aria-labelledby="PaddockModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg"> 
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="PaddockModalLabel">Paddocks avec abris</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Nous proposons une formule de pension en paddock avec abri qui combine le meilleur
+                                    des deux mondes : la liberté d'un espace extérieur et le confort sécurisant d'un
+                                    abri individuel. Cette option est idéale pour les chevaux qui aiment passer du temps
+                                    dehors tout en ayant un refuge personnel accessible à tout moment.
+
+                                    Chaque paddock est un espace individuel ou partagé (selon votre offre, précisez si
+                                    c'est individuel ou par petits groupes homogènes) spécialement aménagé pour le
+                                    bien-être de votre compagnon. Il dispose d'un abri spacieux et fonctionnel, offrant
+                                    une protection essentielle contre les intempéries (pluie, vent, soleil) et un lieu
+                                    où votre cheval peut se reposer en toute tranquillité.
+
+                                   <li>Son propre espace extérieur privatif (ou en petit groupe) pour se déplacer
+                                    librement, brouter et interagir.</li> 
+
+                                   <li> Un abri individuel (ou partagé si applicable), propre et paillé (ou sur copeaux,
+                                    précisez le type de litière) pour un confort optimal.</li>
+
+                                    <li>Accès constant à de l'eau fraîche et à du foin de qualité distribué plusieurs fois
+                                    par jour (ou à volonté, précisez).</li>
+
+                                    <li>Surveillance quotidienne par notre équipe attentive, veillant à la santé et au moral
+                                    de chaque équidé.</li>
+
+                                    <li>Tarif : 340€ /mois</li>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIN DES TARIFS -->
+
+
+
+
+</body>
+
+
+
+{% endblock %}
